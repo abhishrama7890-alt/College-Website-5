@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Badrinarayan Barwale Mahavidyalaya, Jalna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+header{
+    background:#004aad;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    background:#007bff;
+    padding:10px;
+}
+nav button{
+    background:white;
+    border:none;
+    margin:5px;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+section{
+    display:none;
+    padding:15px;
+}
+.active{
+    display:block;
+}
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+h3{
+    color:#004aad;
+}
+input, select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button.submit{
+    width:100%;
+    padding:10px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+footer{
+    text-align:center;
+    font-size:13px;
+    padding:10px;
+    color:#555;
+}
+ul{padding-left:20px;}
+.notice li{margin-bottom:5px;}
+</style>
+</head>
+<body>
+<header>🏫 Badrinarayan Barwale Mahavidyalaya, Jalna</header>
+<nav>
+<button onclick="showPage('login')">Login</button>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('courses')">Courses</button>
+<button onclick="showPage('faculty')">Faculty</button>
+<button onclick="showPage('student')">Student Registration</button>
+<button onclick="showPage('contact')">Contact</button>
+<button onclick="showPage('admin')">Admin Panel</button>
+</nav>
+
+<!-- LOGIN -->
+<section id="login" class="active">
+<div class="card">
+<h3>🔐 Login</h3>
+<input id="username" type="text" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+<button class="submit" onclick="login()">Login</button>
+<p id="loginMsg"></p>
+<p><b>Demo Login:</b> admin / 12345</p>
+</div>
+</section>
+
+<!-- HOME -->
+<section id="home">
+<div class="card">
+<img src="IMG_20260123_163511.jpg" alt="Badrinarayan Barwale Mahavidyalaya"
+     style="width:100%; border-radius:8px;">
+</div>
+
+<div class="card">
+<h3>🏠 Welcome</h3>
+<p>
+Welcome to <b>Badrinarayan Barwale Mahavidyalaya, Jalna</b>.    
+We are committed to providing quality higher education with modern infrastructure,
+experienced faculty, and a student-centric learning environment.
+</p>
+</div>
+
+<div class="card">
+<h3>📢 Notice Board</h3>
+<ul class="notice">
+<li>Admissions Open for Academic Year 2026</li>
+<li>Scholarship Forms Available</li>
+<li>Internal Exams Schedule Released</li>
+</ul>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="card">
+<h3>ℹ️ About College</h3>
+<p>
+Badrinarayan Barwale Mahavidyalaya, located in Jalna, Maharashtra, is a renowned
+co-educational institution established in <b>1993</b>.    
+The college is affiliated with <b>Dr. Babasaheb Ambedkar Marathwada University (BAMU), Aurangabad</b>.
+</p>
+<p>
+The institution offers full-time Undergraduate and Postgraduate programs in
+Arts, Science, Commerce, and Computer Applications with special focus on
+Biotechnology and Information Technology.
+</p>
+<h3>🎯 Vision & Mission</h3>
+<p><b>Vision:</b> To empower students through quality education and ethical values.</p>
+<p><b>Mission:</b> To promote academic excellence, innovation, and social responsibility.</p>
+</div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+<div class="card">
+<h3>📚 Courses Offered (NEP 2020)</h3>
+<ul>
+<li>B.A</li>
+<li>B.Sc</li>
+<li>B.Sc Computer Science</li>
+<li>B.Sc Biotechnology</li>
+<li>B.Com</li>
+<li>BCA</li>
+<li>M.Sc Chemistry</li>
+<li>M.Sc Biotechnology</li>
+</ul>
+</div>
+</section>
+
+<!-- FACULTY -->
+<section id="faculty">
+<div class="card">
+<h3>👩‍🏫 Principal</h3>
+<ul>
+<li>Dr. Kavita Prashar – Principal</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💻 Department of Computer Science</h3>
+<ul>
+<li>Prof. Kazi Mam – HOD</li>
+<li>Dr. Vaishali Shinde – Assistant Professor</li>
+<li>Anjali Salva – Assistant Professor</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⚛️ Department of Physics</h3>
+<ul>
+<li>Dr. Kokne Pravin – HOD</li>
+<li>Nilesh Barde – Assistant Professor</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🧪 Department of Chemistry</h3>
+<ul>
+<li>Dr. Omprakash S. Chavan – HOD</li>
+<li>Dr. Ravindra P. Shimpi – Assistant Professor</li>
+<li>Dr. Bhagwansing S. Dobhal – Assistant Professor</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🎓 Department of Arts</h3>
+<ul>
+<li>Vilas Bhutekar</li>
+<li>Walse R. G.</li>
+</ul>
+</div>
+</section>
+
+<!-- STUDENT -->
+<section id="student">
+<div class="card">
+<h3>📝 Student Registration</h3>
+<input id="sname" placeholder="Student Name">
+<input id="semail" type="email" placeholder="Email">
+<input id="smobile" placeholder="Mobile Number">
+<select id="scourse">
+<option value="">Select Course</option>
+<option>B.A</option>
+<option>B.Sc</option>
+<option>B.Sc Computer Science</option>
+<option>B.Sc Biotechnology</option>
+<option>B.Com</option>
+<option>BCA</option>
+<option>M.Sc Chemistry</option>
+<option>M.Sc Biotechnology</option>
+</select>
+<button class="submit" onclick="registerStudent()">Register</button>
+<p id="regMsg"></p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="card">
+<h3>📞 Contact Us</h3>
+<p><b>Address:</b><br>Badrinarayan Barwale Mahavidyalaya,<br>Jalna, Maharashtra – 431203</p>
+<p><b>Phone:</b> 02482-XXXXX</p>
+<p><b>Email:</b> bbmjalna@gmail.com</p>
+<p><b>Office Time:</b> Mon–Sat | 10:00 AM – 5:00 PM</p>
+</div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin">
+<div class="card">
+<h3>⚙️ Admin Panel</h3>
+<ul>
+<li>Vishwakarma Abhishek Sushill</li>
+<li>Borude Harshada Madhukar</li>
+<li>Singh Sushant Shatrughan</li>
+<li>Sonawne Rohan Bhagwan</li>
+<li>Tambade Aditya Yashwant</li>
+<li>Wazarkar Rudra Santosh</li>
+<li>Yadav Abhishek Hardev</li>
+<li>Surve Himalay Abhijeet</li>
+<li>Taksale Vaibhav Pradip</li>
+<li>Shubham Singale</li>
+</ul>
+</div>
+</section>
+
+<footer>
+© 2026 Badrinarayan Barwale Mahavidyalaya, Jalna
+</footer>
+
+<script>
+function showPage(page){
+    document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+    document.getElementById(page).classList.add("active");
+}
+
+function login(){
+    let u=document.getElementById("username").value;
+    let p=document.getElementById("password").value;
+    let msg=document.getElementById("loginMsg");
+    if(u==="admin" && p==="12345"){
+        msg.style.color="green";
+        msg.innerHTML="✅ Login Successful";
+        showPage("home");
+    }else{
+        msg.style.color="red";
+        msg.innerHTML="❌ Invalid Login";
+    }
+}
+
+function registerStudent(){
+    let name=sname.value, email=semail.value, mobile=smobile.value, course=scourse.value;
+    let msg=document.getElementById("regMsg");
+    if(name==""||email==""||mobile==""||course==""){
+        msg.style.color="red";
+        msg.innerHTML="❌ Please fill all fields";
+    }else{
+        msg.style.color="green";
+        msg.innerHTML="✅ Registration Successful";
+    }
+}
+</script>
+</body>
+</html>
